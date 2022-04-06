@@ -1,0 +1,20 @@
+@import '../variables/index';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: currentColor;
+  color: var(--color-base);
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: $line-height-base;
+}
+
+.app {
+  height: 100%;
+  position: relative;
+}

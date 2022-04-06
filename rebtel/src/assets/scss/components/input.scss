@@ -1,0 +1,57 @@
+.base-input {
+  align-items: center;
+  border-bottom: 1px solid var(--color-brand-transparent);
+  color: var(--color-font-2);
+  display: flex;
+  padding: 5px 0;
+  position: relative;
+  &__svg {
+    position: absolute;
+    left: 14px;
+  }
+  &__input {
+    // @extend %font-base;
+    background-color: var(--color-logo);
+    color: var(--color-font-reverse);
+    margin-left: 5px;
+    padding: 10px;
+    padding-left: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+
+  }
+
+  &__textarea {
+    // @extend %font-base;
+
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-family: Arial, sans-serif;
+    margin-left: 5px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .has-value,
+  &__input:focus + &__label {
+    top: -16px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__label {
+    color: var(--color-font-3);
+    flex: 1 0 auto;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,8 @@
+@import 'colors';
+@import 'typography';
+
+:root {
+  /** shadow */
+  --box-shadow: 2px 0 38px rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 8px 26px rgba(0, 0, 0, 0.05);
+}
